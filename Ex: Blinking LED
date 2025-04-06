@@ -1,0 +1,36 @@
+1) Blinking LED: Toggle-Delay
+
+In the main loop, insert the following:
+
+```c
+
+HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5); //Turn PIN from ON to OFF, or from OFF to ON
+HAL_Delay(1000); //wait before restarting the loop
+
+```
+# Ruby Example
+
+```ruby
+x = 5 + 6
+puts "Hello World! #{x}"
+```
+
+# C Example
+
+```c
+int main() {
+  int y = SOME_MACRO_REFERENCE;
+  int x = 5 + 6;
+  cout << "Hello World! " << x << std::endl();
+}
+```
+
+# C++ Example
+
+```cpp
+int main() {
+  int y = SOME_MACRO_REFERENCE;
+  int x = 5 + 6;
+  cout << "Hello World! " << x << std::endl();
+}
+```
