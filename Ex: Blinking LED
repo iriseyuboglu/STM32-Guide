@@ -16,8 +16,8 @@ Now on the timer, select the following settings:
 -TIMX Global Interrupt: Enabled [can be found under "NVIC Settings"]
 
 Also, in the Parameter Settings, the Prescaler and Period need to be set, but what are they?
-The prescaler is *FILL IT OUT AT ANOTHER TIME*. For now, set it to 16000 - 1, which (considering a clock of 16MHz) would lead to a tick of 1ms.
-The period is *FILL IT OUT AT ANOTHER TIME*. For now, set it 1000, which (considering a tick of 1ms) would lead to an interrupt every second.
+The prescaler is *FILL IT OUT AT ANOTHER TIME*. For now, set it to 16000 - 1, which (considering a clock of 16MHz) will lead to a tick of 1ms.
+The period is *FILL IT OUT AT ANOTHER TIME*. For now, set it 1000, which (considering a tick of 1ms) will lead to an interrupt every second.
 
 Start the timer adding, in main.c (inside //USER CODE BEGIN 2):
 
