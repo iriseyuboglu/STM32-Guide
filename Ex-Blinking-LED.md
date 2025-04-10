@@ -1,9 +1,11 @@
+
 1) Blinking LED: Toggle-Delay
 
 In the main loop, insert the following:
 
 HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5); //Turn PIN from ON to OFF, or from OFF to ON (PINs' names and where they lead, along with what ports they have, can be found from documentation [*board model* datasheet, search it on Google])
 HAL_Delay(1000); //wait 1000ms = 1s before restarting the loop
+
 
 
 2) Blinking LED: Using a timer
@@ -26,6 +28,7 @@ HAL_TIM_Base_Start_IT(&htimX);
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypedDef *htim) {
   HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
 }
+
 
 
 3) Blinking LED: Output Compare
