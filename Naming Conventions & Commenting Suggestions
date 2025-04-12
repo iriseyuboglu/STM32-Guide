@@ -11,7 +11,7 @@ uint8_t angeloKnowsItAll = 1;
 Library Instances use camelCase.
 Example:
 
-uint8_t irisAddress = iris_address_init();
+uint16_t irisSleepTime = iris_sleep_time();
 
 ---
 
@@ -71,7 +71,7 @@ sensorReading = distance_from(pointA, pointB); //distance between point A and B 
 
 -------------------------------------------------------------------
 
-3) A certain syntax allows you to make a function easier to look at after use, allowing its description to be read from anywhere just by hovering your mouse over the function's name.
+3) A certain specific syntax allows you to make a function easier to look at after use, allowing its description to be read from anywhere just by hovering your mouse over the function's name.
 Example (the '*' are not necessary, they were inserted to underline that the lines are just placeholders):
 
 /**
@@ -79,8 +79,8 @@ Example (the '*' are not necessary, they were inserted to underline that the lin
   *
   * @note *Longer description.*
   *
-  * @param *varExample1: describes something in the function, values from 5 to 25 [cm]*
-  * @param  *varExample2: describes something else in the function , values from 0 to 100 [s]*
+  * @param *varExample1: describes something in the function, and in here we have values from 5 to 25 [cm]*
+  * @param *varExample2: describes something else in the function , and in here we have values from 0 to 100 [s]*
   *
   * @retval *Return value description*
   */
