@@ -11,4 +11,4 @@ The first tutorial playlist to start with is [here](https://youtube.com/playlist
 The rest of the repo will be filled with small tutorials and notes like this, but nowhere near an actual tutorial:
 - [Ex: Blinking LED](Ex-Blinking-LED.md)
 
-
+- [Quick Introduction To Terms](IntroToTerms.md)
