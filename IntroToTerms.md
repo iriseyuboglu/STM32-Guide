@@ -31,6 +31,7 @@ The timer's counter must be reset **manually**; otherwise, it will continue coun
 
 Timers have a number of priority to handle collisions (which actually happen way more often than you might imagine at first). More prioritized timers will interrupt the other timer's interrupt. 
 <br><sub><sup>I don't think you'll need the pressure values if you can't deploy the parachute in time
+
 Random tangent which we TOTALLY haven't got wrong ourselves in the past.</sub></sup><br>
 
 You should not overlook the fact that **peripherals operate asynchronously** with respect to the main microcontroller. For example, a timer may continue running even if your calculations in the main loop have not yet finished. More critically, **an interrupt can be missed** if callback functions are not handled correctly. Therefore, **timers and their priorities must be configured properly** to ensure reliable and deterministic behavior.
