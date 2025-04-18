@@ -58,7 +58,11 @@ Write, in main.c:
 HAL_TIM_OC_Start_IT(&htim2, TIM_CHANNEL_1); (inside //USER CODE BEGIN 2)
 
 In CubeMX, look for the PIN corresponding to your LED (for example, PA5, needs to be checked on the board's datasheet).
+
 Configure the PIN to TIMX_CHY (X indicating the number of the timer, Y indicating the number of the channel: it will be different for every PIN, if available at all).
+
 Set up TIMX with a clock source, Prescaler and Period just like in example number 2 (maybe you've already done it depending on which PIN you took there).
+
 Enable CHY, going from "Disable" to "Output Compare CHY".
+
 Go in the Parameter Settings, "Output Compare Channel Y", and put the mode to "Toggle on match".
