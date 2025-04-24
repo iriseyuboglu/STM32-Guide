@@ -69,6 +69,8 @@ Example of what not to do:
 
 sensorReading = distance_from(pointA, pointB); //distance between point A and B [cm]
 
+Using the first method instead of the second also allows you to hover over any variable (on Visual Studio Code) and see its description (without changing the file/piece of code you're looking at)
+
 -------------------------------------------------------------------
 
 3) A certain specific syntax allows you to make a function easier to look at after use, allowing its description to be read from anywhere just by hovering your mouse over the function's name.
