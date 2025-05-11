@@ -12,6 +12,6 @@ There's two mandatory steps you have to follow everytime you open a new project 
 
 "gdbPath": "gdb-multiarch", //(remember the end comma)
 
-2 - Changed the file STM32XXXXXXXX_FLASH.ld (you'll have your board number instead of the various 'X' characters), erasing all its content and swapping it with the file we have in this same directory with that same name (be careful, the file can have some minor differences depending on the board, but the latest CubeMX update should have sorted this out completely)
+2 - Changed the file STM32XXXXXXXX_FLASH.ld (you'll have your board number instead of the various 'X' characters), erasing all its content and swapping it with the file we have in this same directory with that same name (be careful, the file can have some minor differences depending on the board, but the latest CubeMX update should have sorted this seconnd step out completely)
 
 Now go on to code! :)
