@@ -8,9 +8,9 @@ Setting up a project in CubeMX:
 Open the folder with the project on Visual Studio Code (the whole folder, don't go inside of it).
 There's two mandatory steps you have to follow everytime you open a new project (wouldn't be necessary if CubeMX wasn't completely broken: java written applications in a nutshell):
 
-1 - Change the launch.json file, adding this line somewhere between line 4 and line 15:
+1 - Change the launch.json file, adding this line somewhere between line 4 and line 15 (remember the comma at the end!):
 
-"gdbPath": "gdb-multiarch", //(remember the end comma)
+"gdbPath": "gdb-multiarch",
 
 2 - Changed the file STM32XXXXXXXX_FLASH.ld (you'll have your board number instead of the various 'X' characters), erasing all its content and swapping it with the file we have in this same directory with that same name (be careful, the file can have some minor differences depending on the board, but the latest CubeMX update should have sorted this seconnd step out completely)
 
