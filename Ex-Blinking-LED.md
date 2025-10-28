@@ -45,7 +45,7 @@ Start the timer adding, in main.c (inside //USER CODE BEGIN 2):
 
 HAL_TIM_Base_Start_IT(&htimX); (substitute 'X' with the timer you're using)
 
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypedDef *htim) {
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
   HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5); (GPIOA is an example of a port, CubeMX will usually substitute it with oher easier to remember aliases) (same can be said for GPIO_PIN_5, example of a pin)
 }
 
